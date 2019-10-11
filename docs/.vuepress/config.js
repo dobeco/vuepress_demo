@@ -1,7 +1,7 @@
 const nav = require('../../config/nav/index.js')
 const sideBar = require('../../config/sidebar/index.js')
 module.exports = {
-  base: '/vuepress_demo/',
+  base: '/web-documents/',
   title: '前端学习记录文档',
   description: '前端开发 vuepress',
   head: [
@@ -16,7 +16,7 @@ module.exports = {
     displayAllHeaders: true,
     activeHeaderLinks: true,
     lastUpdated: '上次更新',
-    repo: 'dobeco/vuepress_demo',
+    repo: 'dobeco/web-documents',
     repoLabel: 'GitHub',
     smoothScroll: true,
   },
