@@ -1,0 +1,15 @@
+{
+  "name": "vuepress_demo",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:dobeco/vuepress_demo.git",
+  "author": "ryan.chen <dobeco@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build src"
+  },
+  "devDependencies": {
+    "vuepress": "^1.1.0"
+  }
+}
