@@ -7,7 +7,6 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],
-  dest: './docs',
   extraWatchFiles: [
     // 指定额外的需要被监听的文件
   
@@ -18,7 +17,7 @@ module.exports = {
     displayAllHeaders: true,
     activeHeaderLinks: true,
     lastUpdated: '上次更新',
-    repo: 'dobeco/vuepress-demo',
+    repo: 'dobeco/vuepress_demo',
     repoLabel: '查看源码',
     smoothScroll: true,
   },
