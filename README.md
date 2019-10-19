@@ -30,7 +30,7 @@ cd -
 项目`push`到你的仓库之后，在命令行执行下列命令：
 
 ```bash
-sh deploy.sh
+yarn deploy
 ```
 
 OK，脚本执行完会在你的仓库创建一个分支：`gh-pages`，

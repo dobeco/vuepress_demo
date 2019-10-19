@@ -1,5 +1,4 @@
-module.exports = {
-  guide: [
+const guide = [
     {
       title: '学习方法',
       collapsable: false,
@@ -15,9 +14,9 @@ module.exports = {
       sidebarDepth: 3,
       children: [
         '/guide/notes/02',
-      
+
 
       ]
     }
-  ],
-}
+  ]
+module.exports = guide

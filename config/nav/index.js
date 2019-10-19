@@ -8,27 +8,34 @@ module.exports = [
       {
         text: '前端基础',
         items: [
-          { text: 'html', link: '/web/base/html/'},
-          { text: 'css', link: '/web/base/css/'},
-          { text: 'js', link: '/web/base/js/'}
+          { text: 'html', link: '/web/html/' },
+          { text: 'css', link: '/web/css/' },
+          { text: 'JavaScript', link: '/web/javascript/' }
         ]
       },
       {
         text: '框架',
         items: [
-          { text: 'Vue.js', link: '/web/framework/vue/'},
-          { text: 'React.js', link: '/web/framework/react/'},
+          { text: 'Vue.js', link: '/web/vue/' },
+          { text: 'React.js', link: '/web/react/' },
         ]
       },
       {
         text: 'Node',
         items: [
-          { text: 'Express.js', link: '/web/node/express/'},
-          { text: 'Koa2.js', link: '/web/node/koa2/'},
-          { text: 'Egg.js', link: '/web/node/egg/'},
+          { text: 'Express.js', link: '/web/express/' },
+          { text: 'Koa2.js', link: '/web/koa2/' },
+          { text: 'Egg.js', link: '/web/egg/' },
         ]
       }
-      
+
+    ]
+  },
+  {
+    text: '读书',
+    items: [
+      { text: 'JavaScript高级程序设计', link: '/books/prjw/' },
+  
     ]
   },
   {

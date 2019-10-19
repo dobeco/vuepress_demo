@@ -9,10 +9,13 @@ module.exports = {
   ],
   extraWatchFiles: [
     // 指定额外的需要被监听的文件
+    '../../docs',
+    '../../config'
   ],
   themeConfig: {
     nav: nav,
     sidebar: sideBar,
+    sidebarDepth: 3,
     displayAllHeaders: true,
     activeHeaderLinks: true,
     lastUpdated: '上次更新',
