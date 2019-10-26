@@ -1,29 +1,21 @@
-const nav = require('../../config/nav/index.js')
-const sideBar = require('../../config/sidebar/index.js')
+const themeConfig = require('./config/theme/')
+
 module.exports = {
+  title: "陈荣辉的文档库",
+  description: 'Enjoy when you can, and endure when you must.',
   base: '/web-documents/',
-  title: '前端学习记录文档',
-  description: '前端开发 vuepress',
+  dest: 'dist',
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
-  extraWatchFiles: [
-    // 指定额外的需要被监听的文件
-    '../../docs',
-    '../../config'
-  ],
-  themeConfig: {
-    nav: nav,
-    sidebar: sideBar,
-    sidebarDepth: 3,
-    displayAllHeaders: true,
-    activeHeaderLinks: true,
-    lastUpdated: '上次更新',
-    repo: 'dobeco/web-documents',
-    repoLabel: 'GitHub',
-    smoothScroll: true,
-  },
+  //theme: 'reco',
+  themeConfig: themeConfig,
   markdown: {
-    lineNumbers: 10
-  }
+    lineNumbers: true
+  },
+  extraWatchFiles: [
+    '/.vuepress/'
+  ],
+  plugins: ['@vuepress/medium-zoom', 'flowchart']
 }
