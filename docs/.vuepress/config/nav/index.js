@@ -1,6 +1,6 @@
 module.exports = [
-  { text: '首页', link: '/', },//icon: 'reco-home' },
-  { text: '时间轴', link: '/timeline/', /*icon: 'reco-date'*/ },
+  { text: '首页', link: '/', icon: 'reco-home' },
+  { text: '时间轴', link: '/timeline/', icon: 'reco-date'},
   {
     text: '文档库',
     icon: 'reco-document',
@@ -10,13 +10,10 @@ module.exports = [
       { text: 'interview', link:'/documents/interview/'}
     ],
   },
-  {
-    text: '笔记', link: '/notes/'
-  },
-
+  
   {
     text: '导航',
-   // icon: 'reco-eye',
+    icon: 'reco-eye',
     items: [
       { text: 'Vue.js', link: 'https://cn.vuejs.org/v2/guide/'},
       { text: 'VuePress', link: 'https://vuepress.vuejs.org/zh/'}
