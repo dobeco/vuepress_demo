@@ -12,7 +12,7 @@ module.exports = {
     }
   },
   // 最后更新时间
-  lastUpdated: 'Last Updated', // string | boolean
+  lastUpdated: '上次更新', // string | boolean
   // 作者
   author: 'Ryan Chen',
   // 备案号

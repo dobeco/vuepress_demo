@@ -1,9 +1,7 @@
 module.exports = {
-  '/documents/javascript/':[
+  '/documents/javascript/': [
     {
       title: '入门篇',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '',
         '/documents/javascript/basic/history',
@@ -13,8 +11,6 @@ module.exports = {
     },
     {
       title: '数据类型',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '/documents/javascript/types/general',
         '/documents/javascript/types/null-undefined-boolean',
@@ -27,21 +23,17 @@ module.exports = {
     },
     {
       title: '运算符',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '/documents/javascript/operators/arithmetic',
         '/documents/javascript/operators/comparison',
         '/documents/javascript/operators/boolean',
         '/documents/javascript/operators/bit',
         '/documents/javascript/operators/priority'
-
+      
       ]
     },
     {
       title: '语法专题',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '/documents/javascript/features/conversion',
         '/documents/javascript/features/error',
@@ -51,8 +43,6 @@ module.exports = {
     },
     {
       title: '标准库',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '/documents/javascript/stdlib/object',
         '/documents/javascript/stdlib/attributes',
@@ -69,8 +59,6 @@ module.exports = {
     },
     {
       title: '面向对象编程',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '/documents/javascript/oop/new',
         '/documents/javascript/oop/this',
@@ -81,8 +69,6 @@ module.exports = {
     },
     {
       title: '异步操作',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '/documents/javascript/async/general',
         '/documents/javascript/async/timer',
@@ -91,8 +77,6 @@ module.exports = {
     },
     {
       title: 'DOM',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '/documents/javascript/dom/general',
         '/documents/javascript/dom/node',
@@ -108,8 +92,6 @@ module.exports = {
     },
     {
       title: '事件',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '/documents/javascript/events/eventtarget',
         '/documents/javascript/events/model',
@@ -126,8 +108,6 @@ module.exports = {
     },
     {
       title: '浏览器模型',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '/documents/javascript/bom/engine',
         '/documents/javascript/bom/window',
@@ -148,7 +128,6 @@ module.exports = {
     },
     {
       title: '附录：网页元素接口',
-      sidebarDepth:2,
       children: [
         '/documents/javascript/elements/a',
         '/documents/javascript/elements/image',
@@ -159,7 +138,7 @@ module.exports = {
         '/documents/javascript/elements/video',
       ]
     }
-    
+  
   ],
   '/documents/es6/': [
     '',
@@ -199,8 +178,6 @@ module.exports = {
   '/documents/interview/': [
     {
       title: '前端篇',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         '',
         'javascript',
@@ -215,14 +192,12 @@ module.exports = {
     },
     {
       title: '计算机通识',
-      collapsable: true,
-      sidebarDepth: 2,
       children: [
         'network',
         'datastruct',
         'algorithm',
         'git'
-     
+      
       ]
     },
   ]
