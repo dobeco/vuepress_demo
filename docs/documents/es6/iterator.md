@@ -1,5 +1,7 @@
 ---
 title: Iterator 和 for...of 循环
+tags: 
+- ES6
 ---
 
 

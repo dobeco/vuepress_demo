@@ -1,5 +1,7 @@
 ---
 title: Generator 函数的语法
+tags: 
+- ES6
 ---
 
 ## 简介

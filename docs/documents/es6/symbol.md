@@ -1,5 +1,7 @@
 ---
 title: Symbol
+tags: 
+- ES6
 ---
 
 

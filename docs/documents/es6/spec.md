@@ -1,5 +1,7 @@
 ---
 title: 读懂 ECMAScript 规格
+tags: 
+- ES6
 ---
 
 

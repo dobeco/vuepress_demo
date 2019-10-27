@@ -1,5 +1,7 @@
 ---
 title: ArrayBuffer
+tags: 
+- ES6
 ---
 
 

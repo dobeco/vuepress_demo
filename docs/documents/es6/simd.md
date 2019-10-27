@@ -1,5 +1,7 @@
 ---
 title: SIMD
+tags: 
+- ES6
 ---
 
 

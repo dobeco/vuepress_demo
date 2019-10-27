@@ -1,6 +1,7 @@
 ---
 title: Class 的基本语法
-
+tags: 
+- ES6
 ---
 
 

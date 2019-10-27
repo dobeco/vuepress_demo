@@ -1,8 +1,7 @@
 ---
 title: 《ECMAScript 6 入门》
 tags:
- -  文档
- - ES6    
+ -  文档   
 categories: 
  - 文档库
 author: 阮一峰

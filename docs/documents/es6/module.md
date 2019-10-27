@@ -1,6 +1,7 @@
-
 ---
 title: Module 的语法
+tags: 
+- ES6
 ---
 
 ## 概述

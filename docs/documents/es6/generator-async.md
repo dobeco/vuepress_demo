@@ -1,5 +1,7 @@
 ---
 title: Generator 函数的异步应用
+tags: 
+- ES6
 ---
 
 ---

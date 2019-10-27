@@ -1,5 +1,7 @@
 ---
 title: ECMAScript 6 简介
+tags: 
+- ES6
 ---
 
 

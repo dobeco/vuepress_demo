@@ -1,5 +1,7 @@
 ---
 title: async 函数
+tags: 
+- ES6
 ---
 
 ## 含义

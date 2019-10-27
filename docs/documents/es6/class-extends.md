@@ -1,5 +1,7 @@
 ---
 title: Class 的继承
+tags: 
+- ES6
 ---
 
 

@@ -1,5 +1,7 @@
 ---
 title: Proxy
+tags: 
+- ES6
 ---
 
 
