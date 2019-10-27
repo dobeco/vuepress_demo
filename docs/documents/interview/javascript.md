@@ -1,5 +1,7 @@
 ---
 title: JS
+tags: 
+- JavaScript
 ---
 
 ## 内置类型

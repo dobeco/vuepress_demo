@@ -1,5 +1,7 @@
 ---
 title: 框架通识
+tags: 
+- MVVM
 ---
 
 ## MVVM

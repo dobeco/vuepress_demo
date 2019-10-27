@@ -15,7 +15,7 @@ module.exports = {
     lineNumbers: true
   },
   extraWatchFiles: [
-    '/.vuepress/'
+    '/docs/'
   ],
   plugins: ['@vuepress/medium-zoom', 'flowchart']
 }

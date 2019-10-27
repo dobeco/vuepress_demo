@@ -209,7 +209,8 @@ module.exports = {
         'safety',
         'framework',
         'vue',
-        'react'
+        'react',
+        'miniapp'
       ]
     },
     {
