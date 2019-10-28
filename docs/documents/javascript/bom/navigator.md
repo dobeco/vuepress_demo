@@ -1,4 +1,8 @@
-# Navigator 对象，Screen 对象。
+---
+title: Navigator 对象，Screen 对象
+tags: 
+- BOM
+---
 
 `window.navigator`属性指向一个包含浏览器和系统信息的 Navigator 对象。脚本通过这个属性了解用户的环境信息。
 

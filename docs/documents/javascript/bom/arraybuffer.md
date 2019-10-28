@@ -1,4 +1,7 @@
-# ArrayBuffer 对象，Blob 对象
+---
+title: ArrayBuffer 对象，Blob 对象
+tags: BOM
+---
 
 ## ArrayBuffer 对象
 

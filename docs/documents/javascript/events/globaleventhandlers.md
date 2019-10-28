@@ -1,4 +1,8 @@
-# GlobalEventHandlers 接口
+---
+title: GlobalEventHandlers 接口
+tags: 
+- 事件
+---
 
 指定事件的回调函数，推荐使用的方法是元素的`addEventListener`方法。
 

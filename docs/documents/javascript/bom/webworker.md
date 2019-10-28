@@ -1,4 +1,10 @@
-# Web Worker
+---
+title: Web Worker
+tags: 
+- BOM
+- 浏览器存储
+---
+# 
 
 ## 概述
 

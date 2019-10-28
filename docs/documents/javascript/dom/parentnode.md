@@ -1,4 +1,8 @@
-# ParentNode 接口，ChildNode 接口
+---
+title: ParentNode 接口，ChildNode 接口
+tags: 
+- DOM
+---
 
 节点对象除了继承 Node 接口以外，还会继承其他接口。`ParentNode`接口表示当前节点是一个父节点，提供一些处理子节点的方法。`ChildNode`接口表示当前节点是一个子节点，提供一些相关方法。
 

@@ -1,4 +1,8 @@
-# window 对象
+---
+title: window 对象
+tags: 
+- BOM
+---
 
 ## 概述
 

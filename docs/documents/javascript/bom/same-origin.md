@@ -1,4 +1,9 @@
-# 同源限制
+---
+title: 同源限制
+tags: 
+- BOM
+- 同源策略
+---
 
 浏览器安全的基石是“同源政策”（[same-origin policy](https://en.wikipedia.org/wiki/Same-origin_policy)）。很多开发者都知道这一点，但了解得不全面。
 

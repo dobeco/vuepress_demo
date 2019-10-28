@@ -1,4 +1,9 @@
-# Storage 接口
+---
+title: Storage 接口
+tags: 
+- BOM
+- 浏览器存储
+---
 
 ## 概述
 

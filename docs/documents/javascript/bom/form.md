@@ -1,4 +1,9 @@
-# 表单，FormData 对象
+---
+title: 表单，FormData 对象 
+tags: 
+- BOM
+- 表单
+---
 
 ## 表单概述
 

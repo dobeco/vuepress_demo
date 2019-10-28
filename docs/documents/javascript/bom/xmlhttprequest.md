@@ -1,4 +1,9 @@
-# XMLHttpRequest 对象
+---
+title: XMLHttpRequest 对象
+tags: 
+- BOM
+- Ajax
+---
 
 ## 简介
 

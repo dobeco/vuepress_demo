@@ -1,4 +1,9 @@
-# File 对象，FileList 对象，FileReader 对象
+---
+title: File 对象，FileList 对象，FileReader 对象
+tags: 
+- BOM
+---
+
 
 ## File 对象
 

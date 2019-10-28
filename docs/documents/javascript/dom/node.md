@@ -1,4 +1,9 @@
-# Node 接口
+---
+title: Node 接口
+tags: 
+- DOM
+---
+
 
 所有 DOM 节点对象都继承了 Node 接口，拥有一些共同的属性和方法。这是 DOM 操作的基础。
 
