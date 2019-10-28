@@ -5,7 +5,6 @@
   "repository": "git@github.com:dobeco/web-documents.git",
   "description": "Vuepress GitHub Pages web-doucments blog",
   "author": "ryan.chen <dobeco@163.com>",
-
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,10 +13,10 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "vuepress": "1.0.3",
-    "vuepress-theme-reco": "1.0.8-alpha.3",
     "@vuepress/plugin-medium-zoom": "1.0.0-alpha.0",
+    "@vuepress/plugin-pwa": "1.0.0-alpha.3",
+    "vuepress": "1.0.3",
     "vuepress-plugin-flowchart": "1.4.3",
-    "@vuepress/plugin-pwa": "1.0.0-alpha.3"
+    "vuepress-theme-reco": "^1.1.0"
   }
 }
