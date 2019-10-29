@@ -15,38 +15,40 @@ module.exports = [
     text: '导航',
     icon: 'reco-eye',
     items: [
-      { text: 'Vue.js', link: 'https://cn.vuejs.org/v2/guide/'},
-      { text: 'VuePress', link: 'https://vuepress.vuejs.org/zh/'}
-      
-    ],
-  },
-  {
-    text: '工具箱',
-    items: [
       {
-        text: '在线编辑',
+        text: '文档',
         items: [
-          { text: '图片压缩', link: 'https://tinypng.com/' }
+          { text: 'Vue.js', link: 'https://cn.vuejs.org/v2/guide/'},
+          { text: 'VuePress', link: 'https://vuepress.vuejs.org/zh/'},
+          { text: 'React.js', link: 'https://reactjs.org/'},
+          { text: 'React-Native', link: 'https://reactnative.cn'},
+          { text: 'Flutter', link: 'https://flutterchina.club/'}
         ]
       },
       {
-        text: '在线服务',
+        text: '刷题',
         items: [
-          { text: '阿里云', link: 'https://www.aliyun.com/' },
-          { text: '腾讯云', link: 'https://cloud.tencent.com/' }
+          { text: '牛客网', link: 'https://www.nowcoder.com/'},
+          { text: 'LeetCode', link: 'https://leetcode-cn.com/'},
+          { text: 'NodeSchool', link: 'https://nodeschool.io/zh-cn/'},
+          { text: 'HackerRank', link: 'https://www.hackerrank.com/'},
+          { text: 'JS难题', link: 'http://javascript-puzzlers.herokuapp.com/'},
+          { text: 'FreeCodeCamp', link: 'https://freecodecamp.cn/home'},
         ]
       },
       {
-        text: '博客指南',
+        text: '在线编辑器',
         items: [
-          { text: '掘金', link: 'https://juejin.im/' },
-          { text: 'CSDN', link: 'https://blog.csdn.net/' }
+          { text: 'CodePan', link: 'https://codepen.io/'},
+          { text: 'JSFiddle', link: 'https://jsfiddle.net/'},
+          { text: 'Dabblet', link: 'http://dabblet.com/'},
         ]
       }
-    ]
+    ],
   },
+
   { text: '联系',
-    //icon: 'reco-message',
+    icon: 'reco-message',
     items: [
       { text: 'GitHub', link: 'https://github.com/dobeco', icon: 'reco-github' },
       { text: '博客圆', link: 'https://www.cnblogs.com/dobeco/', icon: 'reco-bokeyuan' },
