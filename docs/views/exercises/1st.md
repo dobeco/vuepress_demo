@@ -664,3 +664,12 @@ $window.on('load scroll', function() {
 </script>
 
 ```
+
+### 10. 实现一个$attr(name, value) 遍历，属性为name，值为value的元素集合
+
+例如下面示例：
+
+```js
+let ary = $attr('class', 'box') // 获取页面中所有class为box的元素
+
+```
