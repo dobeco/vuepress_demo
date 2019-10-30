@@ -12,7 +12,7 @@ module.exports = {
   theme: 'reco',
   themeConfig: themeConfig,
   markdown: {
-    lineNumbers: true
+    //lineNumbers: true
   },
   extraWatchFiles: [
     '/docs/'

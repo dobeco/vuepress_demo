@@ -22,7 +22,7 @@ module.exports = [
           { text: 'VuePress', link: 'https://vuepress.vuejs.org/zh/'},
           { text: 'React.js', link: 'https://reactjs.org/'},
           { text: 'React-Native', link: 'https://reactnative.cn'},
-          { text: 'Flutter', link: 'https://flutterchina.club/'}
+          { text: 'BootCDM', link: 'https://www.bootcdn.cn'}
         ]
       },
       {
