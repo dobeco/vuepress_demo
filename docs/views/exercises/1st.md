@@ -673,3 +673,75 @@ $window.on('load scroll', function() {
 let ary = $attr('class', 'box') // 获取页面中所有class为box的元素
 
 ```
+
+```js
+
+function $attr(property, value) {
+  // 获取当前页面中所有标签
+  let elements = document.getElementsByTagName('*');
+  console.log(elements)
+  let arr = [];
+  elements = Array.from(elements); // 把非数组转换为数组
+  elements.forEach(item=> {
+    // 存储的是当前元素property对应的属性值
+    let itemValue = item.getAttribute(property);
+    if(property === 'class') {
+      // 样式类属性名要特殊处理
+      new RegExp('\\b' + value + '\\b').test(itemValue)? arr.push(item): null;
+      return; 
+    }
+    if(itemValue === value) { 
+      // 获取的值和传递的值校验成功
+      arr.push(item)
+    }
+  })
+  return arr;
+}
+console.log($attr('class', 'box'))
+
+```
+
+### 11. 英文字符汉字组成的字符串，用正则给英文单词前后加空格。
+
+```javascript
+let str = 'no作no死，你能你can，不能no哔哔！';
+
+function space(string) {
+  let reg = /\b[a-z]+\b/ig;
+  return string.replace(reg, value=> {
+    return " " + value + " ";
+  }).trim();
+}
+console.log(space(str));
+```
+
+
+### 12. 编写一个程序，将数组扁平化，并去除其中重复部分数据，最终得到一个升序且不重复的数组
+
+```javascript
+
+let attr = [ [1,2,3], [4,5,6], [7,8,9, [11,12, [12,23,[14]]]],10]
+
+```
+
+使用ES6中的Array.prototype.flat()
+
+```javascript
+arr = arr.flat(Infinity);
+```
+
+基于ES6中的new Set() 去重数组
+
+```javascript
+arr = Array.from(new Set(arr)).sort((a, b)=> a - b);
+```
+
+把数组直接变成字符串即可 数组toString之后，不管有多少级，最后都会变为以逗号分隔的字符串，没有中括号和所谓的层级了，相当于直接扁平化了
+
+```javascript
+arr = arr.toString().split(',').map(itme => {
+  return Number(itme)
+});
+```
+
+### 13.
