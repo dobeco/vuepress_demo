@@ -9,7 +9,7 @@ categories:
 
 ## 一、HTML和CSS
 
-### 1.你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么?
+### 你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么?
 
 - IE: trident内核
 - Firefox：gecko内核
@@ -17,11 +17,11 @@ categories:
 - Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核
 - Chrome:Blink(基于webkit，Google与Opera Software共同开发)
 
-### 2.每个HTML文件里开头都有个很重要的东西，Doctype，知道这是干什么的吗？
+### 每个HTML文件里开头都有个很重要的东西，Doctype，知道这是干什么的吗？
 
 `<!DOCTYPE>` 声明位于文档中的最前面的位置，处于 `<html>` 标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。（重点：告诉浏览器按照何种规范解析页面）
 
-### 3.Quirks模式是什么？它和Standards模式有什么区别
+### Quirks模式是什么？它和Standards模式有什么区别
 
 从IE6开始，引入了Standards模式，标准模式中，浏览器尝试给符合标准的文档在规范上的正确处理达到在指定浏览器中的程度。
 
@@ -40,7 +40,7 @@ categories:
 
 （还有很多，答出什么不重要，关键是看他答出的这些是不是自己经验遇到的，还是说都是看文章看的，甚至完全不知道。）
 
-### 4.div+css的布局较table布局有什么优点？
+### div+css的布局较table布局有什么优点？
 
 - 改版的时候更方便 只要改css文件。
 
@@ -50,7 +50,7 @@ categories:
 
 - 易于优化（seo）搜索引擎更友好，排名更容易靠前。
 
-### 5.img的alt与title有何异同？ strong与em的异同？
+### img的alt与title有何异同？ strong与em的异同？
 
 a:alt(alt text):为不能显示图像、窗体或applets的用户代理（UA），alt属性用来指定替换文字。替换文字的语言由lang属性指定。(在IE浏览器下会在没有title时把alt当成 tool tip显示)
 
@@ -60,7 +60,7 @@ strong:粗体强调标签，强调，表示内容的重要性
 
 em:斜体强调标签，更强烈强调，表示内容的强调点
 
-### 6.你能描述一下渐进增强和优雅降级之间的不同吗?
+### 你能描述一下渐进增强和优雅降级之间的不同吗?
 
 **渐进增强** progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。
 
@@ -80,7 +80,7 @@ em:斜体强调标签，更强烈强调，表示内容的强调点
 
 
 
-### 7.为什么利用多个域名来存储网站资源会更有效？
+### 为什么利用多个域名来存储网站资源会更有效？
 
 - CDN缓存更方便
 - 突破浏览器并发限制
@@ -88,11 +88,11 @@ em:斜体强调标签，更强烈强调，表示内容的强调点
 - 节约主域名的连接数，优化页面响应速度
 - 防止不必要的安全问题
 
-### 8. 请谈一下你对网页标准和标准制定机构重要性的理解。
+### 请谈一下你对网页标准和标准制定机构重要性的理解。
 
 网页标准和标准制定机构都是为了能让web发展的更‘健康’，开发者遵循统一的标准，降低开发难度，开发成本，SEO也会更好做，也不会因为滥用代码导致各种BUG、安全问题，最终提高网站易用性。
 
-### 9.请描述一下cookies，sessionStorage和localStorage的区别？
+### 请描述一下cookies，sessionStorage和localStorage的区别？
 
 sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
 
@@ -101,7 +101,7 @@ web storage和cookie的区别
 Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。
 除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。
 
-### 10.简述一下src与href的区别。
+### 简述一下src与href的区别。
 
 src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。
 
@@ -121,7 +121,7 @@ href是Hypertext Reference的缩写，指向网络资源所在位置，建立�
 
 那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。
 
-### 11.知道的网页制作会用到的图片格式有哪些？
+### 知道的网页制作会用到的图片格式有哪些？
 
 png-8，png-24，jpeg，gif，svg。
 
@@ -129,17 +129,17 @@ png-8，png-24，jpeg，gif，svg。
 科普一下Webp：WebP格式，谷歌（google）开发的一种旨在加快图片加载速度的图片格式。图片压缩体积大约只有JPEG的2/3，并能节省大量的服务器带宽资源和数据空间。Facebook Ebay等知名网站已经开始测试并使用WebP格式。
 在质量相同的情况下，WebP格式图像的体积要比JPEG格式图像小40%
 
-### 12.知道什么是微格式吗？谈谈理解。在前端构建中应该考虑微格式吗？
+### 知道什么是微格式吗？谈谈理解。在前端构建中应该考虑微格式吗？
 
 微格式（Microformats）是一种让机器可读的语义化XHTML词汇的集合，是结构化数据的开放标准。是为特殊应用而制定的特殊格式。
 
 优点：将智能数据添加到网页上，让网站内容在搜索引擎结果界面可以显示额外的提示。（应用范例：豆瓣，有兴趣自行google）
 
-### 13.在css/js代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次js请求一般情况下有哪些地方会有缓存处理？
+### 在css/js代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次js请求一般情况下有哪些地方会有缓存处理？
 
 答案：dns缓存，cdn缓存，浏览器缓存，服务器缓存。
 
-### 14.一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验。
+### 一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验。
 
 - 图片懒加载，在页面上的未可视区域可以添加一个滚动条事件，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载。
 - 如果为幻灯片、相册等，可以使用图片预加载技术，将当前展示图片的前一张和后一张优先下载。
@@ -176,7 +176,7 @@ SEO主要还是靠你网站的内容和外部链接的。
 
 W3C给我们定了一个很好的标准，在团队中大家都遵循这个标准，可以减少很多差异化的东西，方便开发和维护，提高开发效率，甚至实现模块化开发。
 
-### 16.谈谈以前端角度出发做好SEO需要考虑什么？
+### 谈谈以前端角度出发做好SEO需要考虑什么？
 
 了解搜索引擎如何抓取网页和如何索引网页
 
@@ -211,13 +211,13 @@ Open Directory自身不是搜索引擎，而是一个大型的网站目录，�
 
 合理的标签使用
 
-### 17. 有哪项方式可以对一个DOM设置它的CSS样式？
+### 有哪项方式可以对一个DOM设置它的CSS样式？
 
 - 外部样式表，引入一个外部css文件
 - 内部样式表，将css代码放在 `<head>` 标签内部
 - 内联样式，将css样式直接定义在 HTML 元素内部
 
-### 18.CSS都有哪些选择器？
+### CSS都有哪些选择器？
 
 - 派生选择器（用HTML标签申明）
 - id选择器（用DOM的ID申明）
@@ -257,7 +257,7 @@ Open Directory自身不是搜索引擎，而是一个大型的网站目录，�
 ```
 答案：red。与样式定义在文件中的先后顺序有关，即是后面的覆盖前面的，与在`<p class=’classB classA’>`中的先后关系无关。
 
-### 19.CSS中可以通过哪些属性定义，使得一个DOM元素不显示在浏览器可视范围内？
+### CSS中可以通过哪些属性定义，使得一个DOM元素不显示在浏览器可视范围内？
 
 最基本的：
 
@@ -267,33 +267,12 @@ Open Directory自身不是搜索引擎，而是一个大型的网站目录，�
 
 设置宽高为0，设置透明度为0，设置z-index位置在-1000em
 
-### 20.超链接访问过后hover样式就不出现的问题是什么？如何解决？
+### 超链接访问过后hover样式就不出现的问题是什么？如何解决？
 
 答案：被点击访问过的超链接样式不在具有hover和active了,解决方法是改变CSS属性的排列顺序: L-V-H-A（link,visited,hover,active）
 
-### 21.什么是Css Hack？ie6,7,8的hack分别是什么？
 
-答案：针对不同的浏览器写不同的CSS code的过程，就是CSS hack。
-
-示例如下：
-
-```css
- #test{   
-   width:300px;   
-   height:300px;   
-   background-color:blue;      /*firefox*/
-   background-color:red\9;      /*all ie*/
-   background-color:yellow;    /*ie8*/
-   +background-color:pink;        /*ie7*/
-   _background-color:orange;       /*ie6*/    }  
-   :root #test { background-color:purple\9; }  /*ie9*/
-@media all and (min-width:0px)
-  { #test {background-color:black;} }  /*opera*/
-@media screen and (-webkit-min-device-pixel-ratio:0)
-{ #test {background-color:gray;} }       /*chrome and safari*/
-```
-
-### 22.行内元素和块级元素的具体区别是什么？行内元素的padding和margin可设置吗？
+### 行内元素和块级元素的具体区别是什么？行内元素的padding和margin可设置吗？
 
 块级元素(block)特性：
 - 总是独占一行，表现为另起一行开始，而且其后的元素也必须另起一行显示;
@@ -307,7 +286,7 @@ Open Directory自身不是搜索引擎，而是一个大型的网站目录，�
 
 答案：input、img、button、textarea、label。
 
-### 23.什么是外边距重叠？重叠的结果是什么？
+### 什么是外边距重叠？重叠的结果是什么？
 
 外边距重叠就是margin-collapse。
 
@@ -319,13 +298,13 @@ Open Directory自身不是搜索引擎，而是一个大型的网站目录，�
 - 两个相邻的外边距都是负数时，折叠结果是两者绝对值的较大值。
 - 两个外边距一正一负时，折叠结果是两者的相加的和。
 
-### 24.rgba()和opacity的透明效果有什么不同？
+### rgba()和opacity的透明效果有什么不同？
 
 rgba()和opacity都能实现透明效果，但最大的不同是opacity作用于元素，以及元素内的所有内容的透明度，
 
 而rgba()只作用于元素的颜色或其背景色。（设置rgba透明的元素的子元素不会继承透明效果！）
 
-### 25.css中可以让文字在垂直和水平方向上重叠的两个属性是什么？
+### css中可以让文字在垂直和水平方向上重叠的两个属性是什么？
 
 - 垂直方向：line-height
 - 水平方向：letter-spacing
@@ -334,7 +313,7 @@ rgba()和opacity都能实现透明效果，但最大的不同是opacity作用于
 
 答案:可以用于消除inline-block元素间的换行符空格间隙问题。
 
-### 26.如何垂直居中一个浮动元素？
+### 如何垂直居中一个浮动元素？
 
 ```css
 /* 方法一：已知元素的高宽*/
@@ -342,10 +321,10 @@ rgba()和opacity都能实现透明效果，但最大的不同是opacity作用于
     background-color:#6699FF;
     width:200px;
     height:200px;
-    position: absolute;        //父元素需要相对定位
+    position: absolute;        /*父元素需要相对定位*/
     top: 50%;
     left: 50%;
-    margin-top:-100px ;   //二分之一的height，width
+    margin-top:-100px ;   /* 二分之一的height，width*/
     margin-left: -100px;
     }
  
@@ -355,9 +334,8 @@ rgba()和opacity都能实现透明效果，但最大的不同是opacity作用于
     width: 200px;
     height: 200px;
     background-color: #6699FF;
- 
     margin:auto;
-    position: absolute;        //父元素需要相对定位
+    position: absolute;        /*父元素需要相对定位*/
     left: 0;
     top: 0;
     right: 0;
@@ -373,13 +351,13 @@ rgba()和opacity都能实现透明效果，但最大的不同是opacity作用于
 }
 ```
 
-### 27.px和em的区别。
+### px和em的区别。
 
 px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易。em得值不是固定的，并且em会继承父级元素的字体大小。
 
 浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px。那么12px=0.75em, 10px=0.625em。
 
-### 28.描述一个”reset”的CSS文件并如何使用它。知道normalize.css吗？你了解他们的不同之处？
+### 描述一个”reset”的CSS文件并如何使用它。知道normalize.css吗？你了解他们的不同之处？
 
 重置样式非常多，凡是一个前端开发人员肯定有一个常用的重置CSS文件并知道如何使用它们。他们是盲目的在做还是知道为什么这么做呢？原因是不同的浏览器对一些元素有不同的默认样式，如果你不处理，在不同的浏览器下会存在必要的风险，或者更有戏剧性的性发生。
 
@@ -387,7 +365,7 @@ px和em都是长度单位，区别是，px的值是固定的，指定是多少�
 
 在这一方面，无法做每一个复位重置。它也确实有些超过一个重置，它处理了你永远都不用考虑的怪癖，像HTML的audio元素不一致或line-height不一致。
 
-### 29.Sass、LESS是什么？大家为什么要使用他们？
+### Sass、LESS是什么？大家为什么要使用他们？
 
 他们是CSS预处理器。他是CSS上的一种抽象层。他们是一种特殊的语法/语言编译成CSS。
 
@@ -399,13 +377,13 @@ px和em都是长度单位，区别是，px的值是固定的，指定是多少�
 - 可以轻松实现多重继承。
 - 完全兼容 CSS 代码，可以方便地应用到老项目中。LESS 只是在 CSS 语法上做了扩展，所以老的 CSS 代码也可以与 LESS 代码一同编译。
 
-### 30.display:none与visibility:hidden的区别是什么？
+### display:none与visibility:hidden的区别是什么？
 
 - display : 隐藏对应的元素但不挤占该元素原来的空间。
 - visibility: 隐藏对应的元素并且挤占该元素原来的空间。
 - 即使使用CSS display:none属性后，HTML元素（对象）的宽度、高度等各种属性值都将“丢失”;而使用visibility:hidden属性后，HTML元素（对象）仅仅是在视觉上看不见（完全透明），而它所占据的空间位置仍然存在。
 
-### 31.CSS中link和@import的区别是：
+### CSS中link和@import的区别是：
 
 Link属于html标签，而@import是CSS中提供的
 在页面加载的时候，link会同时被加载，而@import引用的CSS会在页面加载完成后才会加载引用的CSS
@@ -414,25 +392,25 @@ Link属于html标签，而@import是CSS中提供的
 
 Link引入样式的权重大于@import的引用（@import是将引用的样式导入到当前的页面中）
 
-### 32.简介盒子模型：
+### 简介盒子模型：
 
 CSS的盒子模型有两种：IE盒子模型、标准的W3C盒子模型模型
 
 盒模型：内容、内边距、外边距（一般不计入盒子实际宽度）、边框
 
-### 33.为什么要初始化样式？
+### 为什么要初始化样式？
 
 由于浏览器兼容的问题，不同的浏览器对标签的默认样式值不同，若不初始化会造成不同浏览器之间的显示差异
 
 但是初始化CSS会对搜索引擎优化造成小影响
 
-### 34.BFC是什么?
+### BFC是什么?
 
 BFC（块级格式化上下文），一个创建了新的BFC的盒子是独立布局的，盒子内元素的布局不会影响盒子外面的元素。在同一个BFC中的两个相邻的盒子在垂直方向发生margin重叠的问题
 
 BFC是指浏览器中创建了一个独立的渲染区域，该区域内所有元素的布局不会影响到区域外元素的布局，这个渲染区域只对块级元素起作用
 
-### 35.html语义化是什么？
+### html语义化是什么？
 
 当页面样式加载失败的时候能够让页面呈现出清晰的结构
 
@@ -440,17 +418,17 @@ BFC是指浏览器中创建了一个独立的渲染区域，该区域内所有�
 
 便于项目的开发及维护，使html代码更具有可读性，便于其他设备解析。
 
-### 36.Doctype的作用？严格模式与混杂模式的区别？
+### Doctype的作用？严格模式与混杂模式的区别？
 
 - `<!DOCTYPE>`用于告知浏览器该以何种模式来渲染文档
 - **严格模式下**：页面排版及JS解析是以该浏览器支持的最高标准来执行
 - **混杂模式**：不严格按照标准执行，主要用来兼容旧的浏览器，向后兼容
 
-### 37.IE的双边距BUG：块级元素float后设置横向margin，ie6显示的margin比设置的较大。
+### IE的双边距BUG：块级元素float后设置横向margin，ie6显示的margin比设置的较大。
 
 解决：加入_display：inline
 
-### 38.HTML与XHTML——二者有什么区别？
+### HTML与XHTML——二者有什么区别？
 
 1. 所有的标记都必须要有一个相应的结束标记
 2. 所有标签的元素和属性的名字都必须使用小写
@@ -461,7 +439,7 @@ BFC是指浏览器中创建了一个独立的渲染区域，该区域内所有�
 7. 不要在注释内容中使用 "--"
 8. 图片必须有说明文字
 
-### 39.html常见兼容性问题？
+### html常见兼容性问题？
 
 1. 双边距BUG float引起的  使用display
 2. 3像素问题 使用float引起的 使用dislpay:inline -3px  
@@ -482,11 +460,11 @@ BFC是指浏览器中创建了一个独立的渲染区域，该区域内所有�
 ```
 10. IE6不支持PNG透明背景，解决办法: IE6下使用gif图片
 
-### 40.对WEB标准以及W3C的理解与认识
+### 对WEB标准以及W3C的理解与认识
 
 答：标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外 链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维 护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性。
 
-### 41.行内元素有哪些?块级元素有哪些?CSS的盒模型?
+### 行内元素有哪些?块级元素有哪些?CSS的盒模型?
 
 答：块级元素：div p h1 h2 h3 h4 form ul
 
@@ -494,18 +472,18 @@ BFC是指浏览器中创建了一个独立的渲染区域，该区域内所有�
 
 Css盒模型:内容，border ,margin，padding
 
-### 42.前端页面有哪三层构成，分别是什么?作用是什么?
+### 前端页面有哪三层构成，分别是什么?作用是什么?
 
 答：结构层 Html 表示层 CSS 行为层 js。
 
-### 43.Doctype作用? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?
+### Doctype作用? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?
 
 - `<!DOCTYPE>` 声明位于文档中的最前面，处于 html标签之前。告知浏览器的解析器，用什么文档类型 规范来解析这个文档。 
   - 严格模式的排版和 JS 运作模式是  以该浏览器支持的最高标准运行。
   - 在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。
   - DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。
 
-  ### 44.行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
+### 行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
 
  - CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，比如div默认display属性值为“block”，成为“块级”元素；span默认display属性值为“inline”，是“行内”元素。  
 - 行内元素有：a b span img input select strong（强调的语气） 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p  
@@ -516,14 +494,14 @@ Css盒模型:内容，border ,margin，padding
 <embed><keygen><param><source><track><wbr>
 ```
 
-### 45.CSS的盒子模型？
+### CSS的盒子模型？
 
 两种， IE 盒子模型、标准 W3C 
 
 - 盒子模型；IE 的content部分包含了 border 和 pading;
 - 盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
 
-### 46.CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
+### CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
 
 1. id选择器（ # myid）
 2. 类选择器（.myclassname）
@@ -554,7 +532,7 @@ CSS3新增伪类举例：
 - :enabled、:disabled 控制表单控件的禁用状态。
 - :checked，单选框或复选框被选中。
 
-### 47.如何居中div,如何居中一个浮动元素?
+### 如何居中div,如何居中一个浮动元素?
 
 给div设置一个宽度，然后添加margin:0 auto属性
 
@@ -578,7 +556,7 @@ div{
     } 
 ```
 
-### 48.浏览器的内核分别是什么?经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？
+### 浏览器的内核分别是什么?经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？
 
 - IE浏览器的内核Trident、 Mozilla的Gecko、google的WebKit、Opera内核Presto；
 - png24为的图片在iE6浏览器上出现背景，解决方案是做成PNG8.
@@ -587,7 +565,7 @@ div{
 - 浮动ie产生的双倍距离 `#box{ float:left; width:10px; margin:0 0 0 100px;}` 
 -  这种情况之下IE会产生20px的距离，解决方案是在float的标签样式控制中加入` ——_display:inline;`将其转化为行内属性。(_这个符号只有ie6会识别)
 
-### 49.列出display的值，说明他们的作用。position的值， relative和absolute定位原点是？
+### 列出display的值，说明他们的作用。position的值， relative和absolute定位原点是？
 
  1. block 象块类型元素一样显示。
   none 缺省值。向行内元素类型一样显示。
@@ -605,7 +583,7 @@ div{
   *（忽略 top, bottom, left, right z-index 声明）。
   * inherit 规定从父元素继承 position 属性的值。
 
-### 50.absolute的containing block计算方式跟正常流有什么不同？
+### absolute的containing block计算方式跟正常流有什么不同？
 
   lock-level boxes
 
@@ -632,15 +610,15 @@ containing block
 
 如果都找不到，则为 initial containing block。
 
-### 51.对WEB标准以及W3C的理解与认识
+### 对WEB标准以及W3C的理解与认识
 
 标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外 链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维 护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性；
 
-### 52.css的基本语句构成是?
+### css的基本语句构成是?
 
 选择器{属性1:值1;属性2:值2;……}
 
-### 53.浏览器标准模式和怪异模式之间的区别是什么?
+### 浏览器标准模式和怪异模式之间的区别是什么?
 
 - 盒子模型 渲染模式的不同
 
@@ -656,7 +634,7 @@ containing block
 
 　　设置宽高为0，设置透明度为0，设置z-index位置在-1000
 
-### 55.行内元素和块级元素的具体区别是什么？行内元素的padding和margin可设置吗？
+### 行内元素和块级元素的具体区别是什么？行内元素的padding和margin可设置吗？
 
 块级元素(block)特性：
 
@@ -670,3 +648,407 @@ containing block
 那么问题来了，浏览器还有默认的天生inline-block元素（拥有内在尺寸，可设置高宽，但不会自动换行），有哪些？
 
 答案：input 、img 、button 、textarea 、label
+
+### 什么是外边距重叠？重叠的结果是什么？
+
+外边距重叠就是margin-collapse。
+
+在CSS当中，相邻的两个盒子（可能是兄弟关系也可能是祖先关系）的外边距可以结合成一个单独的外边距。这种合并外边距的方式被称为折叠，并且因而所结合成的外边距称为折叠外边距。
+
+折叠结果遵循下列计算规则：
+1. 两个相邻的外边距都是正数时，折叠结果是它们两者之间较大的值。
+2. 两个相邻的外边距都是负数时，折叠结果是两者绝对值的较大值。
+3. 两个外边距一正一负时，折叠结果是两者的相加的和。
+
+### 说display属性有哪些？可以做什么？
+
+- display:block行内元素转换为块级元素
+- display:inline块级元素转换为行内元素
+- display:inline-block转为内联元素
+
+### 哪些css属性可以继承？
+- 可继承： font-size font-family color, ul li dl dd dt;
+- 不可继承 ：border padding margin width height ;
+
+### css优先级算法如何计算？
+
+- !important >  id > class > 标签 
+- !important 比 内联优先级高
+- 优先级就近原则，样式定义最近者为准;
+- 以最后载入的样式为准;
+
+## 二、JS基础
+
+### javascript的typeof返回哪些数据类型
+
+### 例举3种强制类型转换和2种隐式类型转换?
+
+强制（parseInt(),parseFloat(),Number()）
+
+隐式（== ,!!）
+
+### split() 、join() 的区别
+
+### 数组方法pop() push() unshift() shift()
+
+### 事件绑定和普通事件有什么区别
+
+普通添加事件的方法：
+
+```javascript
+var btn = document.getElementById("hello");
+btn.onclick = function(){
+	alert(1);
+}
+btn.onclick = function(){
+	alert(2);
+}
+```
+执行上面的代码只会alert 2 
+
+事件绑定方式添加事件：
+
+```javascript
+var btn = document.getElementById("hello");
+btn.addEventListener("click",function(){
+	alert(1);
+},false);
+btn.addEventListener("click",function(){
+	alert(2);
+},false);
+```
+
+执行上面的代码会先alert 1 再 alert 2
+
+普通添加事件的方法不支持添加多个事件，最下面的事件会覆盖上面的，而事件绑定（addEventListener）方式添加事件可以添加多个。
+
+addEventListener不兼容低版本IE
+
+普通事件无法取消
+
+addEventLisntener还支持事件冒泡+事件捕获
+
+### IE和DOM事件流的区别
+
+1. 执行顺序不一样、
+2. 参数不一样
+3. 事件加不加on
+4. this指向问题
+
+### call和apply的区别
+
+call方法: 
+
+语法：call(thisObj，Object1,Object2...)
+
+定义：调用一个对象的一个方法，以另一个对象替换当前对象。
+
+说明：
+- call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文从初始的上下文改变为由 thisObj 指定的新对象。 
+- 如果没有提供 thisObj 参数，那么 Global 对象被用作 thisObj。 
+
+apply方法： 
+
+语法：apply(thisObj，[argArray])
+
+定义：应用某一对象的一个方法，用另一个对象替换当前对象。 
+
+说明： 
+- 如果 argArray 不是一个有效的数组或者不是 arguments 对象，那么将导致一个 TypeError。 
+- 如果没有提供 argArray 和 thisObj 任何一个参数，那么 Global 对象将被用作 thisObj， 并且无法被传递任何参数。
+
+### b继承a的方法
+
+```javascript
+function A( age, name ){ 
+  this.age = age; 
+  this.name = name; 
+} 
+
+A.prototype.show = function(){ 
+  alert('父级方法'); 
+} 
+
+function B(age,name,job){ 
+  A.apply( this, arguments ); 
+  this.job = job; 
+} 
+
+B.prototype = new A();
+var b = new A(14,'侠客行'); 
+var a = new B(15,'狼侠','侠客');
+
+```
+
+### 如何阻止事件冒泡和默认事件
+
+canceBubble()只支持IE,return false,stopPropagation()
+
+### 添加 删除 替换 插入到某个接点的方法
+- obj.appendChid()
+- obj.insertBefore()
+- obj.replaceChild()
+- obj.removeChild()
+
+### javascript的本地对象，内置对象和宿主对象
+
+- 本地对象为array obj regexp等可以new实例化
+- 内置对象为gload Math 等不可以实例化的
+- 宿主为浏览器自带的document,window 等
+
+### window.onload 和document ready的区别
+
+window.onload 是在dom文档树加载完和所有文件加载完之后执行一个函数Document.ready原生中没有这个方法
+
+jquery中有 $().ready(function),在dom文档树加载完之后执行一个函数（注意，这里面的文档树加载完不代表全部文件加载完）。
+
+$(document).ready要比window.onload先执行
+
+window.onload只能出来一次，$(document).ready可以出现多次
+
+### javascript的同源策略
+
+一段脚本只能读取来自于同一来源的窗口和文档的属性，这里的同一来源指的是主机名、议和端口号的组合
+
+### 当一个DOM节点被点击时候，我们希望能够执行一个函数，应该怎么做？
+
+直接在DOM里绑定事件：`<div onclick=”test()”></div>`
+
+在JS里通过onclick绑定：xxx.onclick = test
+
+通过事件添加进行绑定：addEventListener(xxx, ‘click’, test)
+
+那么问题来了，Javascript的事件流模型都有什么？
+- “事件冒泡”：事件开始由最具体的元素接受，然后逐级向上传播
+- “事件捕捉”：事件由最不具体的节点先接收，然后逐级向下，一直到最具体的
+- “DOM事件流”：三个阶段：事件捕捉，目标阶段，事件冒泡
+
+### 看下列代码,输出什么？解释原因。
+
+```javascript
+var undefined;
+undefined == null; // true
+1 == true;   // true
+2 == true;   // false
+0 == false;  // true
+0 == '';     // true
+NaN == NaN;  // false
+[] == false; // true
+[] == ![];   // true
+```
+
+undefined与null相等，但不恒等（===）
+
+一个是number一个是string时，会尝试将string转换为number
+
+尝试将boolean转换为number，0或1
+
+尝试将Object转换成number或string，取决于另外一个对比量的类型
+
+所以，对于0、空字符串的判断，建议使用 “===” 。“===”会先判断两边的值类型，类型不匹配时为false。
+
+那么问题来了，看下面的代码，输出什么，foo的值为什么？
+
+```javascript
+var foo = "11"+2-"1";
+console.log(foo);
+console.log(typeof foo);
+```
+
+执行完后foo的值为111，foo的类型为String。
+
+### 已知有字符串foo=”get-element-by-id”,写一个function将其转化成驼峰表示法”getElementById”。
+
+```javascript
+function combo(msg){
+    var arr=msg.split("-");
+    for(var i=1;i<arr.length;i++){
+        arr[i]=arr[i].charAt(0).toUpperCase()+arr[i].substr(1,arr[i].length-1);
+    }
+    msg=arr.join("");
+    return msg;
+}
+```
+
+### 输出今天的日期，以YYYY-MM-DD的方式，比如今天是2014年9月26日，则输出2014-09-26
+
+```javascript
+var d = new Date();
+// 获取年，getFullYear()返回4位的数字
+var year = d.getFullYear();
+// 获取月，月份比较特殊，0是1月，11是12月
+var month = d.getMonth() + 1;
+// 变成两位
+month = month < 10 ? '0' + month : month;
+// 获取日
+var day = d.getDate();
+day = day < 10 ? '0' + day : day;
+alert(year + '-' + month + '-' + day);
+
+```
+
+### 为了保证页面输出安全，我们经常需要对一些特殊的字符进行转义，请写一个函数escapeHtml，将<, >, &, “进行转义
+
+
+### 看下列代码，将会输出什么?(变量声明提升)
+
+```javascript
+var foo = 1;
+(function () {
+  console.log(foo);
+  var foo = 2;
+  console.log(foo);
+})()
+
+```
+
+答案：输出undefined 和 2。上面代码相当于：
+
+```js
+var foo = 1;
+(function () {
+  var foo;
+  console.log(foo); //undefined
+  foo = 2;
+  console.log(foo); // 2;   
+})()
+```
+
+函数声明与变量声明会被JavaScript引擎隐式地提升到当前作用域的顶部，但是只提升名称不会提升赋值部分。
+
+### 用js实现随机选取10–100之间的10个数字，存入一个数组，并排序。
+
+```javascript
+function randomNub(aArray, len, min, max) {
+  if (len >= (max - min)) {
+    return '超过' + min + '-' + max + '之间的个数范围' + (max - min - 1) + '个的总数';
+  }
+  if (aArray.length >= len) {
+    aArray.sort(function (a, b) {
+      return a - b
+    });
+    return aArray;
+  }
+  var nowNub = parseInt(Math.random() * (max - min - 1)) + (min + 1);
+  for (var j = 0; j < aArray.length; j++) {
+    if (nowNub == aArray[j]) {
+      randomNub(aArray, len, min, max);
+      return;
+    }
+  }
+  aArray.push(nowNub);
+  randomNub(aArray, len, min, max);
+  return aArray;
+}
+var arr = [];
+randomNub(arr, 10, 10, 100);
+
+```
+
+### 把两个数组合并，并删除第二个元素。
+
+```javascript
+var array1 = ['a', 'b', 'c'];
+var bArray = ['d', 'e', 'f'];
+var cArray = array1.concat(bArray);
+cArray.splice(1, 1);
+
+```
+
+### 有这样一个`URL：http://item.taobao.com/item.htm?a=1&b=2&c=&d=xxx&e`，请写一段JS程序提取URL中的各个GET参数(参数名和参数个数不确定)，将其按key-value形式返回到一个json结构中，如{a:’1′, b:’2′, c:”, d:’xxx’, e:undefined}。
+
+```javascript
+function serilizeUrl(url) {
+  var urlObject = {};
+  if (/\?/.test(url)) {
+    var urlString = url.substring(url.indexOf("?") + 1);
+    var urlArray = urlString.split("&");
+    for (var i = 0, len = urlArray.length; i < len; i++) {
+      var urlItem = urlArray[i];
+      var item = urlItem.split("=");
+      urlObject[item[0]] = item[1];
+    }
+    return urlObject;
+  }
+  return null;
+}
+
+```
+
+### 正则表达式构造函数var reg=new RegExp(“xxx”)与正则表达字面量var reg=//有什么不同？匹配邮箱的正则表达式？
+
+答案：当使用RegExp()构造函数的时候，不仅需要转义引号（即\”表示”），并且还需要双反斜杠（即\\表示一个\）。
+
+使用正则表达字面量的效率更高。 
+
+邮箱的正则匹配：
+```js
+var regMail = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+```
+
+### 看下面代码，给出输出结果。
+
+```js
+for (var i = 1; i <= 3; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, 0);
+};
+```
+答案：4 4 4。
+
+原因：Javascript事件处理器在线程空闲之前不会运行。追问，如何让上述代码输出1 2 3？
+
+```js
+for (var i = 1; i <= 3; i++) {
+  setTimeout((function (a) {  //改成立即执行函数
+    console.log(a);
+  })(i), 0);
+};
+
+1           //输出
+2
+3
+```
+
+### 写一个function，清除字符串前后的空格。（兼容所有浏览器）
+
+使用自带接口trim()，考虑兼容性：
+```js
+if (!String.prototype.trim) {
+  String.prototype.trim = function () {
+    return this.replace(/^\s+/, "").replace(/\s+$/, "");
+  }
+}
+
+// test the function 
+var str = " \t\n test string ".trim();
+alert(str == "test string"); // alerts "true"
+```
+
+### Javascript中callee和caller的作用？
+
+caller是返回一个对函数的引用，该函数调用了当前函数；
+
+callee是返回正在被执行的function函数，也就是所指定的function对象的正文。
+
+那么问题来了？如果一对兔子每月生一对兔子；一对新生兔，从第二个月起就开始生兔子；假定每对兔子都是一雌一雄，试问一对兔子，第n个月能繁殖成多少对兔子？（使用callee完成）
+
+```js
+var result = [];
+function fn(n) {  //典型的斐波那契数列
+  if (n == 1) {
+    return 1;
+  } else if (n == 2) {
+    return 1;
+  } else {
+    if (result[n]) {
+      return result[n];
+    } else {
+      //argument.callee()表示fn()
+      result[n] = arguments.callee(n - 1) + arguments.callee(n - 2);
+      return result[n];
+    }
+  }
+}
+```
