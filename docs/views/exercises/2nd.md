@@ -1052,3 +1052,187 @@ function fn(n) {  //典型的斐波那契数列
   }
 }
 ```
+
+### 请你谈谈Cookie的弊端？
+
+缺点：
+1. Cookie数量和长度的限制。每个domain最多只能有20条cookie，每个cookie长度不能超过4KB，否则会被截掉。
+2. 安全性问题。如果cookie被人拦截了，那人就可以取得所有的session信息。即使加密也与事无补，因为拦截者并不需要知道cookie的意义，他只要原样转发cookie就可以达到目的了。
+3. 有些状态不可能保存在客户端。例如，为了防止重复提交表单，我们需要在服务器端保存一个计数器。如果我们把这个计数器保存在客户端，那么它起不到任何作用。
+
+### 哪些操作会造成内存泄漏？
+
+内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。
+
+垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。
+
+1. setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。
+2. 闭包
+3. 控制台日志
+4. 循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）
+
+### 判断一个字符串中出现次数最多的字符，统计这个次数
+
+```js
+var str = 'asdfssaaasasasasaa';
+var json = {};
+for (var i = 0; i < str.length; i++) {
+  if (!json[str.charAt(i)]) {
+    json[str.charAt(i)] = 1;
+  } else {
+    json[str.charAt(i)]++;
+  }
+};
+var iMax = 0;
+var iIndex = '';
+for (var i in json) {
+  if (json[i] > iMax) {
+    iMax = json[i];
+    iIndex = i;
+  }
+}
+alert('出现次数最多的是:' + iIndex + '出现' + iMax + '次');
+```
+
+### 闭包是什么，有什么特性，对页面有什么影响
+
+我的理解是，闭包就是能够读取其他函数内部变量的函数。在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。
+
+```js
+function outer() {
+  var num = 1;
+  function inner() {
+    var n = 2;
+    alert(n + num);
+  }
+  return inner;
+}
+outer()();
+```
+### 字符串反转，如将 '12345678' 变成 '87654321'
+
+```javascript
+//思路：先将字符串转换为数组 split()，利用数组的反序函数 reverse()颠倒数组，再利用 jion() 转换为字符串
+var str = '12345678';
+str = str.split('').reverse().join('');
+```
+
+### 将数字 12345678 转化成 RMB形式 如： 12,345,678 
+
+```js
+//个人方法；
+//思路：先将数字转为字符， str= str + '' ;
+//利用反转函数，每三位字符加一个 ','最后一位不加； re()是自定义的反转函数，最后再反转回去！
+function re(str) {
+  str += '';
+  return str.split("").reverse().join("");
+}
+
+function toRMB(num) {
+  var tmp = '';
+  for (var i = 1; i <= re(num).length; i++) {
+    tmp += re(num)[i - 1];
+    if (i % 3 == 0 && i != re(num).length) {
+      tmp += ',';
+    }
+  }
+  return re(tmp);
+}	
+```
+### 生成5个不同的随机数；
+
+```javascript
+//思路：5个不同的数，每生成一次就和前面的所有数字相比较，如果有相同的，则放弃当前生成的数字！
+var num1 = [];
+for (var i = 0; i < 5; i++) {
+  num1[i] = Math.floor(Math.random() * 10) + 1; //范围是 [1, 10]
+  for (var j = 0; j < i; j++) {
+    if (num1[i] == num1[j]) {
+      i--;
+    }
+  }
+}
+```
+
+### 去掉数组中重复的数字 
+
+方法一：
+
+```js
+//思路：每遍历一次就和之前的所有做比较，不相等则放入新的数组中！
+//这里用的原型 个人做法；
+Array.prototype.unique = function () {
+  var len = this.length,
+    newArr = [],
+    flag = 1;
+  for (var i = 0; i < len; i++ , flag = 1) {
+    for (var j = 0; j < i; j++) {
+      if (this[i] == this[j]) {
+        flag = 0;        //找到相同的数字后，不执行添加数据
+      }
+    }
+    flag ? newArr.push(this[i]) : '';
+  }
+  return newArr;
+}
+
+```
+
+方法二：
+
+```js
+var arr = [1, 2, 3, 3, 4, 4, 5, 5, 6, 1, 9, 3, 25, 4];
+Array.prototype.unique2 = function () {
+  var n = []; //一个新的临时数组
+  for (var i = 0; i < this.length; i++) //遍历当前数组
+  {
+    //如果当前数组的第i已经保存进了临时数组，那么跳过，
+    //否则把当前项push到临时数组里面
+    if (n.indexOf(this[i]) == -1) n.push(this[i]);
+  }
+  return n;
+}
+
+var newArr2 = arr.unique2(arr);
+alert(newArr2); //输出1,2,3,4,5,6,9,25
+
+
+
+```
+
+### 阶乘函数
+
+```js
+//原型方法
+Number.prototype.N = function () {
+  var re = 1;
+  for (var i = 1; i <= this; i++) {
+    re *= i;
+  }
+  return re;
+}
+var num = 5;
+alert(num.N());
+
+```
+
+### 看题作答
+
+```js
+function f1() {
+  var tmp = 1;
+  this.x = 3;
+  console.log(tmp);    //A
+  console.log(this.x);     //B
+}
+var obj = new f1(); //1
+console.log(obj.x)     //2
+console.log(f1());        //3
+
+```
+
+分析：    
+        
+这道题让我重新认识了对象和函数，首先看代码（1），这里实例话化了 f1这个类。相当于执行了 f1函数。所以这个时候 A 会输出 1， 而 B 这个时候的 this 代表的是 实例化的当前对象 obj B 输出 3.。 代码（2）毋庸置疑会输出 3， 重点 代码（3）首先这里将不再是一个类，它只是一个函数。那么 A输出 1， B呢？这里的this 代表的其实就是window对象，那么this.x 就是一个全局变量 相当于在外部 的一个全局变量。所以 B 输出 3。最后代码由于f没有返回值那么一个函数如果没返回值的话，将会返回 underfined ，所以答案就是 ： 1， 3， 3， 1， 3， underfined 。
+
+
