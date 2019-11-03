@@ -744,4 +744,96 @@ arr = arr.toString().split(',').map(itme => {
 });
 ```
 
-### 13.
+### 13. 实现一个构造函数new方法
+
+```javascript
+function Dog(name) {
+  this.name = name;
+}
+Dog.prototype.bark = function() {
+  console.log('wangwang');
+}
+Dog.prototype.sayName = function() { 
+  console.log(this.name) 
+}
+
+```
+
+实现一个_new方法，模拟内置new后的结果
+
+```js
+function _new(fn, ...arg) {
+  // fn 当前要new的类 ...arg 后期需要给构造函数传递的参数信息
+  //let obj = {};
+  //obj.__proto__ =fn.prototype;
+  let obj = Object.create(fn.prototype);
+  fn.call(obj, ...arg);
+  return obj;
+
+}
+```
+
+```js
+let samao = _new(Dog, '三毛');
+sanmao.bark(); // wangwang
+sanmao.sayName() // my name is 三毛
+console.log(sanmao instanceof Dog); // true
+
+```
+
+### 14. 冒泡排序 Bubble
+
+```js
+
+function bubble(ary) {
+  let temp = null;
+  // 外层循环i控制比较论述
+  for(let i = 0;i<ary.length-1;i++) {
+    // 里层循环控制每一轮比较的次数j
+    for(let j =0;j<ary.length-1-i; j++) {
+      if (ary[j]> ary[j+1] ) {
+        // 当前项大于后一项
+        temp =ary[j];
+        ary[j] = ary[j+1];
+        ary[j+1] = temp;
+      }
+    }
+  }
+  return ary;
+}
+
+let ary = [12, 8,24,6,3,9]
+```
+
+### 15. 插入排序 Insert
+
+```js
+
+
+```
+
+### 16. 快速排序 Quick
+
+```js
+function quick(array) {
+  // 结4. 束递归 (当array中小于等于一项)
+  if(array.length < = 1) {
+    return array
+  }
+
+  // 1.找到数组的中间项，在原有数组中把它移除
+  let middleIndex =Math.floor(array.length/2);
+  let middlevalue = array.splice(middleIndex,1)[0]
+
+  // 2. 准备左右两个数组，循环剩下数组中每一项，比当前项小的放在左边数组中，反之放在右边数组中。
+  let aryLeft = [];
+  let aryRight = [];
+  for( let i = 0; i<array.length; i++) {
+    let item = ary[i];
+    item< middleValue ?aryLeft.push(item) : aryRight.push(item)
+  }
+
+  // 3.递归方式堂左右两边的数组持续这样处理，一直到左右两边都排好序
+}
+
+···
