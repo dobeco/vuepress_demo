@@ -120,7 +120,7 @@ export default {
     font-size 30px
     box-sizing: border-box;
     padding: 0 10px;
-    text-shadow $textShadow
+    /*text-shadow $textShadow */
   }
   .description {
     position: absolute;
@@ -133,7 +133,7 @@ export default {
     font-size 22px
     box-sizing: border-box;
     padding: 0 10px;
-    text-shadow $textShadow
+    /*text-shadow $textShadow*/
   }
   .inputBox{
     max-width:700px;
