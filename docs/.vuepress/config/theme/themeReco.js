@@ -14,7 +14,7 @@ module.exports = {
   // 最后更新时间
   lastUpdated: '上次更新', // string | boolean
   // 作者
-  author: 'Ryan Chen',
+  author: 'dobeco',
   // 备案号
   record: '',
   // 项目开始时间
