@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "git@github.com:dobeco/web-documents.git",
   "description": "Vuepress GitHub Pages web-doucments blog",
-  "author": "ryan.chen <dobeco@163.com>",
+  "author": "dobeco <dobeco@163.com>",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
